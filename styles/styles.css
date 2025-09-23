@@ -9,8 +9,14 @@ nav a {
     display: block;
 }
 
-h1{
+h1 {
     color: steelblue;
+}
+
+main {
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 1em;
 }
 
 main img {
@@ -21,11 +27,11 @@ main img {
     box-shadow: 0 0 30px gray;
 }
 
-p{
+p {
     padding: 0;
 }
 
-aside{
+aside {
     width: 20em;
     margin: 1em;
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -35,19 +41,13 @@ aside{
     text-align: center;
 }
 
-aside img{
+aside img {
     width: 200px;
     height: auto;
 }
 
-footer{
+footer {
     margin-top: 1em;
     border-top: 1px solid #000;
     text-align: center;
-}
-
-main{
-    max-width: 840px;
-    margin: 0 auto;
-    padding: 1em;
 }
