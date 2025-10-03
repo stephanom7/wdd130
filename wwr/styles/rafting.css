@@ -27,22 +27,30 @@ header, main, footer {
   margin: 0 auto;
 }
 
+/* Header Grid */
+header {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  align-items: center;
+  padding: 10px 0;
+}
+
 /* Headings */
 h1, h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
 }
 
-/* Nav and spacing */
-nav, p, section, article {
-  margin: 16px;
-  padding: 8px;
+/* Nav Flex */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
 }
 
 nav a {
   color: var(--primary-color);
   text-decoration: none;
-  margin-right: 15px;
   font-weight: bold;
 }
 
@@ -59,6 +67,7 @@ header img {
 /* Hero Section */
 .hero {
   position: relative;
+  margin-bottom: 20px;
 }
 
 .hero img {
@@ -94,6 +103,25 @@ header img {
   margin-left: 10px;
   border: 2px solid var(--primary-color);
   box-shadow: 0 0 10px gray;
+}
+
+/* Adventures Section */
+.adventures {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 16px 0;
+}
+
+.adventures figure {
+  flex: 1;
+  text-align: center;
+}
+
+.adventures img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
 }
 
 /* Footer */
