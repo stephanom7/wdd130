@@ -2,40 +2,73 @@
 <html lang="en-US">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stephano Martinez - WDD130</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home – White Water Rafting Co.</title>
     <meta name="description"
-        content="Stephano Martinez — WDD130 Home Page. Student portfolio and course projects for web development.">
-    <meta name="author" content="Stephano Martinez">
-    <link rel="stylesheet" href="styles/rafting.css">
+        content="Explore thrilling rafting adventures with White Water Rafting Co. Sign up for our newsletter and book your next trip today!" />
+    <meta name="author" content="Stephano Martinez" />
+    <link rel="stylesheet" href="styles/rafting.css" />
 </head>
 
 <body>
     <header>
+        <a href="index.html">
+            <img src="images/logo.png" alt="White Water Rafting Co. Logo" />
+        </a>
         <nav>
             <a href="index.html" class="active">Home</a>
-            <a href="wwr/">White Water Rafting Website</a>
-            <a href="wwr/site-plan-rafting.html">White Water Rafting Siteplan</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
 
     <main>
-        <h1>Stephano Martinez - WDD130</h1>
-        <img src="week01/images/profile.jpg" alt="Hello, my name is Stephano Martinez" width="200">
-        <p>Hello! My name is Stephano Martinez and I am from Quito, Ecuador. I am studying web development and learning
-            how to design and build websites using HTML and CSS.</p>
+        <section class="hero">
+            <img src="images/hero.jpg" alt="Rafting Adventure" />
+            <h1>Life is a Journey, Not a Destination</h1>
+        </section>
+
+        <section class="newsletter">
+            <h2>Join Our Adventure Newsletter</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required />
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+        <section class="cta">
+            <h2>Ready for the Ride of Your Life?</h2>
+            <p>Discover our exciting rafting trips and book your next adventure today!</p>
+            <a href="trips.html" class="cta-button">Explore Trips</a>
+        </section>
+
+        <section class="grid-info">
+            <div>
+                <img src="images/rafting1.jpg" alt="Rafting Team" />
+                <h3>Our Mission</h3>
+                <p>We provide unforgettable white water rafting experiences for thrill-seekers and nature lovers alike.
+                </p>
+            </div>
+            <div>
+                <img src="images/rafting2.jpg" alt="River Adventure" />
+                <h3>Why Choose Us?</h3>
+                <p>Certified guides, top-notch equipment, and breathtaking locations make us your best choice.</p>
+            </div>
+        </section>
     </main>
 
-    <aside>
-        <h2>Ecuador</h2>
-        <img src="week02/images/ecuador_landscape.jpg" alt="Ecuador landscape">
-        <p>Ecuador is a beautiful country in South America known for the Galápagos Islands, the Andes mountains, and
-            the Amazon rainforest. It is rich in culture and history.</p>
-    </aside>
-
     <footer>
-        <p>©2025 - Stephano Martinez - Quito, Ecuador</p>
+        <p>&copy; 2025 White Water Rafting Co. | Stephano Martinez</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook" /></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter" /></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram" /></a>
+        </nav>
     </footer>
 </body>
 
