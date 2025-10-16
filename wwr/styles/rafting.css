@@ -1,142 +1,141 @@
-/* Variables */
-:root {
-  --primary-color: steelblue;
-  --accent1-color: #333;
-  --heading-font: 'Georgia', serif;
-  --body-font: 'Arial', sans-serif;
+/* ===== Contact Page Styles ===== */
+
+/* Main headings for contact page */
+main h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--primary-color);
 }
 
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Contact Info Section */
+.contact-info {
+    background-color: #e8f0fe;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
 }
 
-/* Body */
-body {
-  font-family: var(--body-font);
-  color: var(--accent1-color);
-  background-color: #f9f9f9;
-  line-height: 1.6;
+.contact-info h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
 
-/* Layout */
-header, main, footer {
-  width: 840px;
-  margin: 0 auto;
+.contact-info p {
+    margin: 5px 0;
 }
 
-/* Header Grid */
-header {
-  display: grid;
-  grid-template-columns: 100px 1fr;
-  align-items: center;
-  padding: 10px 0;
+/* Google Map iframe */
+.contact-info iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    border: none; /* Ensure no inline border */
+    border-radius: 8px;
+    margin-top: 15px;
 }
 
-/* Headings */
-h1, h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
+/* Employees Section */
+.employees {
+    margin-bottom: 30px;
 }
 
-/* Nav Flex */
-nav {
-  display: flex;
-  justify-content: flex-end;
-  gap: 15px;
+.employees h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
-nav a {
-  color: var(--primary-color);
-  text-decoration: none;
-  font-weight: bold;
+.employees figure {
+    display: inline-block;
+    width: 30%;
+    margin: 1%;
+    text-align: center;
 }
 
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* Logo */
-header img {
-    width: 50px; 
+.employees img {
+    width: 100%;
     height: auto;
+    border-radius: 50%;
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-/* Hero Section */
-.hero {
-  position: relative;
-  margin-bottom: 20px;
+.employees figcaption {
+    margin-top: 8px;
+    font-weight: bold;
 }
 
-.hero img {
-  display: block;
-  width: 100%;
-  height: auto;
+/* Contact Form */
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.hero h1 {
-  position: absolute;
-  top: 20px;
-  width: 100%;
-  padding: 16px;
-  text-align: center;
-  opacity: 0.7;
-  background-color: var(--accent1-color);
-  color: #fff;
+.contact-form h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
-.hero article {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 12px;
-  border-radius: 8px;
-  max-width: 300px;
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
 }
 
-.hero article img {
-  float: right;
-  width: 125px;
-  margin-left: 10px;
-  border: 2px solid var(--primary-color);
-  box-shadow: 0 0 10px gray;
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: var(--body-font);
+    font-size: 1em;
 }
 
-/* Adventures Section */
-.adventures {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  margin: 16px 0;
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+    margin-right: 5px;
 }
 
-.adventures figure {
-  flex: 1;
-  text-align: center;
+.contact-form button[type="submit"] {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+    display: block;
+    width: 100%;
 }
 
-.adventures img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
+.contact-form button[type="submit"]:hover {
+    background-color: #3a7bd5;
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  font-size: 0.9em;
-  margin-top: 20px;
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .employees figure {
+        width: 45%;
+        margin: 2.5%;
+    }
 }
 
-.socialmedia a {
-  text-decoration: none;
-  margin: 0 10px;
-}
+@media (max-width: 480px) {
+    header, main, footer {
+        width: 95%;
+        margin: 0 auto;
+    }
 
-.socialmedia img {
-  width: 32px;
-  height: 32px;
+    .employees figure {
+        width: 100%;
+        margin-bottom: 15px;
+    }
 }
