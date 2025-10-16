@@ -19,7 +19,7 @@ body {
   color: var(--accent1-color);
   background-color: #f9f9f9;
   line-height: 1.6;
-}
+} 
 
 /* Layout */
 header, main, footer {
