@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | White Water Rafting Adventures</title>
+    <meta name="description"
+        content="Get in touch with White Water Rafting Adventures. Find our address, phone number, email, and send us a message via the contact form.">
+    <link rel="stylesheet" href="rafting.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>White Water Rafting Adventures</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Company Contact Info -->
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <p><strong>Address:</strong> 123 River Road, Baños, Ecuador</p>
+            <p><strong>Phone:</strong> +593 99 123 4567</p>
+            <p><strong>Email:</strong> info@raftingadventures.com</p>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="400" height="300" allowfullscreen=""
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+
+        <!-- Employees Section -->
+        <section class="employees">
+            <h2>Meet Our Team</h2>
+            <figure>
+                <img src="images/employee1.jpg" alt="Head Rafting Guide">
+                <figcaption>John Perez – Head Rafting Guide</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee2.jpg" alt="Operations Manager">
+                <figcaption>Ana Lopez – Operations Manager</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee3.jpg" alt="Booking Coordinator">
+                <figcaption>Carlos Rivera – Booking Coordinator</figcaption>
+            </figure>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <p>Purpose of your message:</p>
+                <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
+                <label><input type="radio" name="purpose" value="booking"> Booking Question</label>
+                <label><input type="radio" name="purpose" value="website"> Website Suggestion</label>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+
+                <label><input type="checkbox" name="newsletter"> Subscribe me to the monthly newsletter</label>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 White Water Rafting Adventures. All rights reserved.</p>
+        <nav>
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Use</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
